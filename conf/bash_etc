@@ -1,0 +1,12 @@
+alias rm=trash
+alias r=trash
+alias rl='ls ~/.trash'
+alias ur=undelfile
+undelfile()
+{
+	mv -i ~/.trash/\$@
+}
+trash()
+{
+	mv $@ ~/.trash/
+}
